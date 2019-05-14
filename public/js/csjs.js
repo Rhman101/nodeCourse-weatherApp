@@ -1,7 +1,7 @@
 document.getElementById('form').onsubmit = (e) => {
     e.preventDefault();
     const value = document.getElementById('input').value;
-    fetch(`http://localhost:3000/weather?search=${value}`).then((response) => {
+    fetch(`/weather?search=${value}`).then((response) => {
     response.json().then((data) => {
         if (data.error) {
             document.getElementById('outputOne').innerText = data.error;
