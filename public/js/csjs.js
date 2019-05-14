@@ -12,5 +12,3 @@ document.getElementById('form').onsubmit = (e) => {
     })
 })
 };
-
-
